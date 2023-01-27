@@ -83,7 +83,7 @@
 
             <div class="row mb-3 mr-lg-5">
                 <div class="col-md-12">
-                    <asp:GridView ID="GridView1" runat="server" CssClass="table-hover table-bordered" EmptyDataText="No Record to Display"
+                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-hover table-bordered" EmptyDataText="No Record to Display"
                         AutoGenerateColumns="False" Width="1101px" OnPageIndexChanging="GridView1_PageIndexChanging" DataKeyNames="StudentId"
                         OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowEditing="GridView1_RowEditing"
                         OnRowUpdating="GridView1_RowUpdating" AllowPaging="True" PageSize="4" OnRowDataBound="GridView1_RowDataBound">

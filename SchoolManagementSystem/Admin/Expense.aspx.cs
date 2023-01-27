@@ -112,10 +112,12 @@ namespace SchoolManagementSystem.Admin
                     ddlSubject.DataValueField = "SubjectId";
                     ddlSubject.DataBind();
                     ddlSubject.Items.Insert(0, "Select Subject");
-                    string expenseId = GridView1.DataKeys[e.Row.RowIndex].Value.ToString();
-                    DataTable dataTable = fn.Fetch(@"Select e.ExpenseId, e.ClassId, e.SubjectId, s.SubjectName from Expense e 
-                                                    inner join Subject s on e.SubjectId = s.SubjectId where e.ExpenseId = '"+ expenseId + "' ");
-                    ddlSubject.SelectedValue = dataTable.Rows[0]["SubjectId"].ToString();
+                    //string expenseId = GridView1.DataKeys[e.Row.RowIndex].Value.ToString();
+                    //DataTable dataTable = fn.Fetch(@"Select e.ExpenseId, e.ClassId, e.SubjectId, s.SubjectName from Expense e 
+                    //                                inner join Subject s on e.SubjectId = s.SubjectId where e.ExpenseId = '"+ expenseId + "' ");
+                    //ddlSubject.SelectedValue = dataTable.Rows[0]["SubjectId"].ToString();
+                    string selectedSubject = DataBinder.Eval(e.Row.DataItem, "SubjectName").ToString();
+                    ddlSubject.Items.FindByText(selectedSubject).Selected = true;
 
                 }
             }

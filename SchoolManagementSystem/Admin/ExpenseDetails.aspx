@@ -22,7 +22,7 @@
 
             <div class="row mb-3 mr-lg-5">
                 <div class="col-md-10">
-                    <asp:GridView ID="GridView1" runat="server" CssClass="table-hover table-bordered" EmptyDataText="No Record to Display"
+                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-hover table-bordered" EmptyDataText="No Record to Display"
                         AutoGenerateColumns="False" Width="980px">
                         <Columns>
                             <asp:BoundField DataField="Sr.No" HeaderText="Sr.No">

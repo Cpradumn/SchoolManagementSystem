@@ -24,7 +24,7 @@
             </div>
             <div class="row mb-3 mr-lg-5">
                 <div class="col-md-6">
-                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-hover table-bordered" DataKeyNames="ClassId" 
+                    <asp:GridView ID="GridView1" runat="server" cc DataKeyNames="ClassId" CssClass="table table-hover table-bordered"
                         AutoGenerateColumns="False" EmptyDataText="No Record to Display" OnPageIndexChanging="GridView1_PageIndexChanging" 
                         OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating"
                         AllowPaging="true" PageSize="4" >

@@ -42,7 +42,7 @@
                             <asp:BoundField DataField="Sr.No" HeaderText="Sr.No" ReadOnly="True">
                             <ItemStyle HorizontalAlign="Center" />
                             </asp:BoundField>
-                            <asp:BoundField DataField="Class" HeaderText="Class" ReadOnly="True">
+                            <asp:BoundField DataField="ClassName" HeaderText="Class" ReadOnly="True">
                             <ItemStyle HorizontalAlign="Center" />
                             </asp:BoundField>
                             <asp:TemplateField HeaderText="Fees(Annual)">
