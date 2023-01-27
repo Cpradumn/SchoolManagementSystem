@@ -29,6 +29,25 @@
                 });
             });
         </script>
+
+     <%--Making Menu Selected for active page--%>
+    <script>
+
+        $(function () {
+            // this will get the full URL at the address bar
+            var url = Window.location.href;
+
+            //passes on every "a" tag
+            $("#sub-header a").each(function () {
+                // check if its the same on the address bar
+                if (url == (this.href)) {
+                    $(this).closest("li").addClass("active");
+                }
+            });
+        });
+
+    </script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -37,7 +56,7 @@
        <div class="wrapper">
             <div class="sidebar">
                 <div class="bg_shadow"></div>
-                <div class="sidebar_inner">
+                <div class="sidebar_inner" id="sub-header">
                     <div class="close">
                         <i class="fas fa-times"></i>
                     </div>
@@ -125,7 +144,7 @@
                         </li>
                     </ul>
                     <div class="logout_btn">
-                        <asp:LinkButton ID="btnLogOut" runat="server" CausesValidation="false">Logout</asp:LinkButton>
+                        <asp:LinkButton ID="btnLogOut" runat="server" CausesValidation="false" OnClick="btnLogOut_Click">Logout</asp:LinkButton>
                     </div>
 
                 </div>
@@ -136,7 +155,7 @@
                         <i class="fas fa-bars"></i>
                     </div>
                     <div class="logo">
-                        <a href="#">Vidhya Vardhini HighSchool</a>
+                        <a href="#">VidhyaVardhini HighSchool</a>
                     </div>
                 </div>
 

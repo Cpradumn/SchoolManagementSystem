@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SchoolManagementSystem.Admin
+namespace SchoolManagementSystem.Teacher
 {
-    public partial class AdminMst : System.Web.UI.MasterPage
+    public partial class TeacherMst : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
